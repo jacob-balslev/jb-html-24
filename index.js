@@ -3,7 +3,6 @@ $( document ).ready(function() {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('nav a');
     
-
     function resume(){
         //do something
 
@@ -49,12 +48,6 @@ $( document ).ready(function() {
             
         });
         }
-
-       
-
             window.addEventListener('scroll', resume);
     
 });
-
-
-
