@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
         sections.forEach(sec => {
             let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
+            let offset = sec.offsetTop - -350;
             let height = sec.offsetHeight;
             let id = sec.getAttribute('id');
     
@@ -20,7 +20,7 @@ $( document ).ready(function() {
             };
     
             let sectionListArray = document.querySelectorAll('#cv')
-            let headerScan = document.querySelectorAll('.hero');
+            let headerScan = document.querySelectorAll('.top-container');
             const viewHeight = document.documentElement.clientHeight
             
             sectionListArray.forEach(function(v) {
@@ -42,12 +42,15 @@ $( document ).ready(function() {
                 if (y > viewHeight|| bottom+height < viewHeight ) {
                     v.classList.remove('active')
                 } else {
-                    v.classList.add('active')
+                    v.classList.add('active');
                 }
             })
             
         });
+        
+       
         }
-            window.addEventListener('scroll', resume);
+            window.addEventListener('scroll', resume);   
+
     
 });
