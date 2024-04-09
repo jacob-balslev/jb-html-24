@@ -19,8 +19,8 @@ $( document ).ready(function() {
                 });
             };
     
-            let sectionListArray = document.querySelectorAll('#cv')
-            let headerScan = document.querySelectorAll('.top-container');
+            let sectionListArray = document.querySelectorAll('#resume')
+            let headerScan = document.querySelectorAll('.connect-container');
             const viewHeight = document.documentElement.clientHeight
             
             sectionListArray.forEach(function(v) {
